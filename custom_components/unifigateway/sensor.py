@@ -71,6 +71,10 @@ PLATFORM_SCHEMA = PLATFORM_SCHEMA.extend({
         vol.All(cv.ensure_list, [vol.In(POSSIBLE_MONITORED)])
 })
 
+
+import urllib3
+urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
+
 def setup_platform(hass, config, add_entities, discovery_info=None):
     """Set up the Unifi sensor."""
     from pyunifi.controller import Controller, APIError
