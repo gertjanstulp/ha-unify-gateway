@@ -1,0 +1,9 @@
+{
+    "name": "UnifiGateway",
+    "zip_release": true,
+    "hide_default_branch": true,
+    "homeassistant": "2023.6.0",
+    "render_readme": true,
+    "filename": "unifigateway.zip"
+  }
+  
